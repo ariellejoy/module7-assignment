@@ -30,4 +30,8 @@ jobs:
       - name: Run tests with pytest and enforce 100% coverage
         run: |
           pytest --cov=app --cov-fail-under=100
+      
+      - name: Buil docker image
+        run: |
+          docker build -t ariellejoy/module7-assignment:latest .
           
