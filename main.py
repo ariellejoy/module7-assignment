@@ -2,7 +2,7 @@ import sys
 import qrcode
 from dotenv import load_dotenv
 import logging.config
-from pathlib import P
+from pathlib import Path
 import os
 import argparse
 from datetime import datetime
