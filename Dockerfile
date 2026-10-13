@@ -18,5 +18,5 @@ COPY --chown=myuser:myuser . .
 USER myuser
 
 # Use ENTRYPOINT and CMD to allow flexibility when running the container
-ENTRYPOINT ["python", "main.py"]
+ENTRYPOINT ["python3", "main.py"]
 CMD ["--url", "http://github.com/ariellejoy"]

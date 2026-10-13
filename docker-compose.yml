@@ -8,7 +8,7 @@ services:
     environment:
       - QR_CODE_DIR=/app/qr_codes
       - FILL_COLOR=red
-      - BACK_COLOR=white
+      - BACK_COLOR=green
     volumes:
       - ./qr_codes:/app/qr_codes  # Maps the local 'qr_codes' directory to '/app/qr_codes' in the container
-    command: --url http://www.njit.edu  # Replace 'main.py' with your script's filename if different
+    command: --url https://hub.docker.com/repository/docker/ariellejoy/module7-assignment/general # Replace 'main.py' with your script's filename if different
